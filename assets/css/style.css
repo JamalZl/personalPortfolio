@@ -1,0 +1,1405 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #444444;
+  overflow: hidden;
+}
+
+.myRow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.myRow .aside {
+  margin: 0;
+  padding: 0;
+  width: 6%;
+  overflow-y: scroll;
+}
+
+.myRow .aside::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50%;
+}
+
+.myRow .aside::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .aside .sidebar {
+  width: 100%;
+  height: 100vh;
+  background-color: #222222;
+}
+
+.myRow .aside .sidebar .sidebarUl {
+  list-style: none;
+}
+
+.myRow .aside .sidebar .sidebarUl li {
+  padding: 10px 7px;
+  border-bottom: 0.5px solid #5f5f5f;
+  cursor: pointer;
+}
+
+.myRow .aside .sidebar .sidebarUl li .sidebarIcon {
+  font-size: 29px;
+  text-align: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: white;
+}
+
+.myRow .aside .sidebar .sidebarUl li .sidebarText {
+  font-size: 12px;
+  text-align: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: white;
+}
+
+.myRow .aside .sidebar .sidebarUl li:nth-child(1) {
+  border-bottom: 1px solid #5f5f5f;
+  border-top: 1px solid #5f5f5f;
+}
+
+.myRow .aside .sidebar .sidebarUl li:hover .sidebarIcon {
+  color: #04b4e0;
+}
+
+.myRow .infobar {
+  margin: 0;
+  padding: 0;
+  width: 28%;
+  height: 100vh;
+  background-color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: scroll;
+}
+
+.myRow .infobar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 50%;
+}
+
+.myRow .infobar::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .infobar .infobarImage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3.5em;
+}
+
+.myRow .infobar .infobarImage img {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+}
+
+.myRow .infobar .infobarInfo .name {
+  margin-top: 1em;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.myRow .infobar .infobarInfo .profession {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 16px;
+  color: #919191;
+}
+
+.myRow .infobar .infobarInfo .socials {
+  margin-top: 1.2em;
+  text-align: center;
+}
+
+.myRow .infobar .infobarInfo .socials a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.myRow .infobar .infobarInfo .socials a i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.myRow .infobar .infobarInfo .socials a:hover i {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.myRow .infobar .infobarCv {
+  width: 15rem;
+  height: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.myRow .infobar .infobarCv a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 22px;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2.3px white solid;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.myRow .infobar .infobarCv a:hover {
+  color: #04b4e0;
+  background-color: white;
+}
+
+.myRow .dynamicBars {
+  width: 66%;
+  height: 100vh;
+  padding: 0;
+}
+
+.myRow .dynamicBars .rightbar {
+  width: 100%;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 1em;
+}
+
+.myRow .dynamicBars .rightbar .rightName {
+  color: white;
+}
+
+.myRow .dynamicBars .rightbar .rightName h2 {
+  font-size: 65px;
+  text-align: center;
+}
+
+.myRow .dynamicBars .rightbar .rightProfession {
+  color: #919191;
+  font-size: 20px;
+  text-align: center;
+}
+
+.myRow .dynamicBars .aboutMeBar {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #222222;
+  padding: 3.1em 0 0 3.1em;
+}
+
+.myRow .dynamicBars .aboutMeBar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 50%;
+}
+
+.myRow .dynamicBars .aboutMeBar::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .about {
+  width: 57%;
+  color: white;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .about .title {
+  margin-bottom: 2em;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .about .title h2 {
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .about .title h2 span {
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .address {
+  width: 43%;
+  color: white;
+  margin: 3.99em 0 0 2.3em;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .address .addressUl {
+  list-style: none;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .address .addressUl li {
+  margin-top: 0.3em;
+}
+
+.myRow .dynamicBars .aboutMeBar .about-address .address .addressUl li span {
+  color: #04b4e0;
+  margin-right: 0.4em;
+}
+
+.myRow .dynamicBars .aboutMeBar .whatIDo {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myRow .dynamicBars .aboutMeBar .whatIDo .wTitle {
+  width: 100%;
+}
+
+.myRow .dynamicBars .aboutMeBar .whatIDo .wTitle span {
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .aboutMeBar .whatIDo .wIcon-wName-wContent {
+  width: 48%;
+  margin-top: 1.5em;
+  padding: 1em;
+}
+
+.myRow .dynamicBars .aboutMeBar .whatIDo .wIcon-wName-wContent .wIcon {
+  font-size: 30px;
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .resumeBar {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #222222;
+  padding: 3.1em 0 0 3.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myRow .dynamicBars .resumeBar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 50%;
+}
+
+.myRow .dynamicBars .resumeBar::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .dynamicBars .resumeBar .rTitle {
+  width: 100%;
+}
+
+.myRow .dynamicBars .resumeBar .rTitle h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo {
+  width: 60%;
+  margin-right: 0 !important;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .eTitle {
+  margin-top: 1.8em;
+  width: 100%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .eTitle h4 {
+  color: white;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .time-place {
+  width: 32%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .time-place .time {
+  color: #a2a2a2;
+  text-align: end;
+  font-size: 14px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .time-place .place {
+  text-align: end;
+  font-size: 13px;
+  color: #a2a2a2;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar {
+  width: 10%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .circles {
+  position: relative;
+  top: 28px;
+  right: -7.1px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .circles .bigCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #1b4651;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .circles .bigCircle .middleCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #04b4e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .circles .bigCircle .middleCircle .smallCircle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .line {
+  width: 0.1px;
+  height: 100px;
+  background-color: #4d4b4b;
+  margin-left: 1em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .bar .line:nth-child(2) {
+  height: 200px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .eduName-eduContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 56%;
+  margin-top: 1.5em;
+  padding: 0 1em 1em 1em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduName .timeResponsive {
+  display: none;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduName .placeResponsive {
+  display: none;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduName h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduContent {
+  color: white;
+  font-size: 14px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .exTitle {
+  margin-top: 1.8em;
+  width: 100%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .exTitle h4 {
+  color: white;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .ex-time-place {
+  width: 30%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .ex-time-place .exTime {
+  color: #a2a2a2;
+  text-align: end;
+  font-size: 14px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .ex-time-place .exPlace {
+  text-align: end;
+  font-size: 13px;
+  color: #a2a2a2;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar {
+  width: 10%;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exCircles {
+  position: relative;
+  top: 28px;
+  right: -7.1px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exCircles .exBigCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #1b4651;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exCircles .exBigCircle .exMiddleCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #04b4e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exCircles .exBigCircle .exMiddleCircle .exSmallCircle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exLine {
+  width: 0.1px;
+  height: 100px;
+  background-color: #4d4b4b;
+  margin-left: 1em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .exBar .exLine:nth-child(2) {
+  height: 200px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin-top: 1.5em;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expName .exTimeResponsive {
+  display: none;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expName .exPlaceResponsive {
+  display: none;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expName h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.myRow .dynamicBars .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expContent {
+  color: white;
+  font-size: 14px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills {
+  width: 40%;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skillsTitle {
+  margin-top: 1.8em;
+  width: 100%;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skillsTitle h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skillsTitle h2 span {
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillName {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4em;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar {
+  width: 80%;
+  height: 10px;
+  border: #04b4e0 solid 1px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.6em;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarH {
+  width: 90%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarJs {
+  width: 80%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarC {
+  width: 85%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarR {
+  width: 25%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarA {
+  width: 79%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarW {
+  width: 95%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarE {
+  width: 85%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarP {
+  width: 93%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarO {
+  width: 93%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .skills-name-bar .skillBar .insideBarRi {
+  width: 50%;
+  height: 5px;
+  background-color: #04b4e0;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .knowledges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myRow .dynamicBars .resumeBar .rSkills .knowledges .knowledge {
+  background-color: #04b4e0;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.myRow .dynamicBars .contactBar {
+  width: 100%;
+  background-color: #222222;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.myRow .dynamicBars .contactBar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 50%;
+}
+
+.myRow .dynamicBars .contactBar::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .dynamicBars .contactBar .contactTitle {
+  padding: 47px 0 0 47px;
+  width: 100%;
+}
+
+.myRow .dynamicBars .contactBar .contactTitle h2 {
+  font-size: 35px;
+  color: white;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .contactBar .locationadd {
+  width: 28%;
+  margin-top: 3em;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .location {
+  width: 92%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 0 10px 0;
+  border: 1px solid #585757;
+  margin: 20px 0 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .location .contactIcon {
+  font-size: 42px;
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .location .contactText {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .number {
+  width: 92%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #333333;
+  padding: 10px 0 10px 0;
+  border: 1px solid #585757;
+  margin: 20px 0 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .number .contactIcon {
+  font-size: 42px;
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .number .contactText {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .email {
+  width: 92%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #333333;
+  padding: 10px 0 10px 0;
+  border: 1px solid #585757;
+  margin: 20px 0 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .email .contactIcon {
+  font-size: 42px;
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .email .contactText {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .freelanceStatus {
+  width: 92%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #333333;
+  padding: 10px 0 10px 0;
+  border: 1px solid #585757;
+  margin: 20px 0 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .freelanceStatus .contactIcon {
+  font-size: 42px;
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .locationadd .freelanceStatus .contactText {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp {
+  width: 72%;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .howTitle h2 {
+  color: white;
+  margin: 1.8em 0 0 3em;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .howTitle h2 span {
+  color: #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message {
+  margin: 1em 0 0 6.15em;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection {
+  width: 50%;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input {
+  width: 97%;
+  height: 2.5em;
+  border-radius: 6px;
+  background-color: #222222;
+  border: 2px solid #9e9999;
+  padding: 8px;
+  font-size: 15px;
+  color: white;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input::-webkit-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:-ms-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input::-ms-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input::placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:focus {
+  border: none;
+  outline: 2px solid #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:focus::-webkit-input-placeholder {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:focus:-ms-input-placeholder {
+  transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:focus::-ms-input-placeholder {
+  transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection input:focus::placeholder {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection {
+  width: 50%;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea {
+  width: 97%;
+  height: 11.4em;
+  border-radius: 6px;
+  border: 2px solid #9e9999;
+  background-color: #222222;
+  padding: 8px 0 0 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea::-webkit-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:-ms-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea::-ms-input-placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea::placeholder {
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #827b7b;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:focus {
+  border: none;
+  outline: 2px solid #04b4e0;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:focus::-webkit-input-placeholder {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:focus:-ms-input-placeholder {
+  transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:focus::-ms-input-placeholder {
+  transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection textarea:focus::placeholder {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .sendMsg {
+  border: 2px solid #04b4e0;
+  background-color: #222222;
+  color: white;
+  border-radius: 25px;
+  width: 29%;
+  padding: 9px 0;
+  margin-top: 2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message .contactForm .sendMsg:hover {
+  background-color: #04b4e0;
+}
+
+.myRow .menuBar {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 22em;
+  height: 100vh;
+  background-color: #444444;
+  z-index: 1;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.myRow .menuBar::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50%;
+}
+
+.myRow .menuBar::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #575252;
+  outline: 1px solid #575252;
+}
+
+.myRow .menuBar .menuImage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myRow .menuBar .menuImage img {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+}
+
+.myRow .menuBar .menuName {
+  margin-top: 0.5em;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.myRow .menuBar .menuProfession {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: 16px;
+  color: #919191;
+}
+
+.myRow .menuBar .menuPages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.8em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myRow .menuBar .menuPages .menuPagesUl {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.myRow .menuBar .menuPages .menuPagesUl li {
+  color: white;
+  font-weight: 500;
+  margin-top: 0.7em;
+}
+
+.myRow .menuBar .menuSocials {
+  margin-top: 1.8em;
+  text-align: center;
+}
+
+.myRow .menuBar .menuSocials a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.myRow .menuBar .menuCv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myRow .menuBar .menuCv .cvDownload {
+  width: 15rem;
+  height: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.myRow .menuBar .menuCv .cvDownload a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 22px;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2.3px white solid;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.myRow .menuBar .menuCv .cvDownload a:hover {
+  color: #04b4e0;
+  background-color: white;
+}
+
+.myRow .menuIcon {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  display: none;
+  z-index: 1000;
+}
+
+.myRow .menuIcon .responsiveMenuIcon {
+  width: 44px;
+  height: 44px;
+  background-color: #04b4cc;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.myRow .menuIcon .responsiveMenuIcon span {
+  color: white;
+  font-size: 22px;
+}
+
+.active i {
+  color: #04b4e0;
+}
+
+@media screen and (max-width: 1023px) {
+  .myRow .aside {
+    display: none;
+  }
+  .myRow .infobar {
+    display: none;
+  }
+  .myRow .dynamicBars {
+    width: 100%;
+  }
+  .myRow .dynamicBars .aboutMeBar {
+    padding: 3.1em !important;
+  }
+  .menuIcon {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .myRow .dynamicBars .aboutMeBar {
+    padding: 3.1em !important;
+  }
+  .myRow .dynamicBars .aboutMeBar .about-address {
+    display: block !important;
+  }
+  .myRow .dynamicBars .aboutMeBar .about-address .about {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .myRow .dynamicBars .aboutMeBar .about-address .about .title {
+    width: 100%;
+  }
+  .myRow .dynamicBars .aboutMeBar .about-address .about .content {
+    width: 100%;
+  }
+  .myRow .dynamicBars .aboutMeBar .about-address .address {
+    width: 100% !important;
+    margin: 3em 0 0 0 !important;
+  }
+  .myRow .dynamicBars .aboutMeBar .whatIDo .wTitle {
+    margin-top: 1.5em;
+  }
+  .myRow .dynamicBars .aboutMeBar .whatIDo .wIcon-wName-wContent {
+    width: 100% !important;
+  }
+  .myRow .dynamicBars .resumeBar {
+    padding: 1.3em !important;
+  }
+  .myRow .dynamicBars .resumeBar .rInfo {
+    width: 100% !important;
+  }
+  .myRow .dynamicBars .resumeBar .rSkills {
+    width: 100% !important;
+  }
+  .myRow .dynamicBars .contactBar .locationadd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .myRow .dynamicBars .contactBar .locationadd .location {
+    margin-left: 0 !important;
+  }
+  .myRow .dynamicBars .contactBar .locationadd .number {
+    margin-left: 0 !important;
+  }
+  .myRow .dynamicBars .contactBar .locationadd .email {
+    margin-left: 0 !important;
+  }
+  .myRow .dynamicBars .contactBar .locationadd .freelanceStatus {
+    margin-left: 0 !important;
+  }
+  .myRow .dynamicBars .contactBar .howCanIHelp {
+    width: 100%;
+  }
+  .myRow .dynamicBars .contactBar .howCanIHelp .contact-info-message {
+    margin-left: 0 !important;
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .resumeBar .rInfo .education .time-bar-content .time-place {
+    display: none;
+  }
+  .resumeBar .rInfo .education .time-bar-content .eduName-eduContent {
+    padding: 0 0 0.5em 0 !important;
+  }
+  .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduName .timeResponsive {
+    display: block !important;
+    color: #acabab;
+    font-size: 14px;
+  }
+  .resumeBar .rInfo .education .time-bar-content .eduName-eduContent .eduName .placeResponsive {
+    display: block !important;
+    color: #acabab;
+    font-size: 14px;
+  }
+  .resumeBar .rInfo .experience .ex-time-bar-content .ex-time-place {
+    display: none;
+  }
+  .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expName .exTimeResponsive {
+    display: block !important;
+    color: #acabab;
+    font-size: 14px;
+  }
+  .resumeBar .rInfo .experience .ex-time-bar-content .expName-expContent .expName .exPlaceResponsive {
+    display: block !important;
+    color: #acabab;
+    font-size: 14px;
+  }
+  .contactBar .howCanIHelp .contact-info-message .contactForm .contactInfoSection {
+    width: 100% !important;
+  }
+  .contactBar .howCanIHelp .contact-info-message .contactForm .contactMessageSection {
+    width: 100% !important;
+    margin-top: 1.2em;
+  }
+  .contactBar .howCanIHelp .contact-info-message .contactForm .sendMsg {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
